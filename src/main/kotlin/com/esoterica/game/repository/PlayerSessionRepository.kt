@@ -1,0 +1,1 @@
+package com.esoterica.game.repository\n\nimport com.esoterica.game.domain.PlayerSession\nimport io.micronaut.data.annotation.Repository\nimport io.micronaut.data.repository.CrudRepository\n\n@Repository\ninterface PlayerSessionRepository : CrudRepository<PlayerSession, Long> {\n    fun findByPlayerId(playerId: String): PlayerSession?\n}\n
