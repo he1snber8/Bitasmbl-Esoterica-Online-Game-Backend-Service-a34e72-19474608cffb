@@ -1,0 +1,1 @@
+plugins {\n    kotlin("jvm") version "1.9.0"\n    id("io.micronaut.application") version "4.0.0"\n}\n\nmicronaut {\n    runtime("netty")\n    processing { incremental(true) }\n}\n\ndependencies {\n    implementation("io.micronaut:micronaut-http-server-netty")\n    implementation("io.micronaut.kotlin:micronaut-kotlin-runtime")\n}\n
