@@ -1,0 +1,1 @@
+package com.esoterica.game.api\n\ndata class CreateSessionRequest(val playerId: String)\n\ndata class SessionResponse(val sessionId: String)\n
