@@ -1,0 +1,1 @@
+package com.esoterica.game.messaging\n\nimport io.micronaut.rabbitmq.annotation.*\n\n@RabbitListener\nclass SessionEventListener {\n    @Queue("session-events-queue")\n    fun onSessionCreated(body: String) {\n        // TODO: update projections or trigger game logic\n    }\n}\n
