@@ -1,0 +1,1 @@
+package com.esoterica.game.domain\n\nimport jakarta.persistence.*\n\n@Entity\n@Table(name = "player_sessions")\nclass PlayerSession(\n    @Id @GeneratedValue var id: Long? = null,\n    @Column(nullable = false) var playerId: String,\n    @Column(nullable = false) var sessionToken: String\n)\n
