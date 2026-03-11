@@ -1,0 +1,1 @@
+package com.esoterica.game\n\nimport io.micronaut.runtime.Micronaut\n\nobject Application {\n    @JvmStatic\n    fun main(args: Array<String>) {\n        Micronaut.build()\n            .packages("com.esoterica.game")\n            .mainClass(Application.javaClass)\n            .start()\n    }\n}\n
