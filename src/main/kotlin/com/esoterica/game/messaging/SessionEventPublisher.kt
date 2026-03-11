@@ -1,0 +1,1 @@
+package com.esoterica.game.messaging\n\nimport io.micronaut.rabbitmq.annotation.*\nimport jakarta.inject.Singleton\n\n@Singleton\nclass SessionEventPublisher {\n    @Topic("session-events")\n    fun sessionCreated(playerId: String) {\n        // TODO: send event payload\n    }\n}\n
