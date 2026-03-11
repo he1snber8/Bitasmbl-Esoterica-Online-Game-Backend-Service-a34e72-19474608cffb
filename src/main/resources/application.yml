@@ -1,0 +1,1 @@
+micronaut:\n  application:\n    name: esoterica-game-backend\n  server:\n    port: 8080\n    cors:\n      enabled: true\n
