@@ -1,0 +1,1 @@
+package com.esoterica.game.service\n\nimport jakarta.inject.Singleton\n\n@Singleton\nclass PlayerSessionService {\n    fun createSession(playerId: String): String {\n        // TODO: persist session in DB and apply domain rules\n        return "session-" + playerId\n    }\n}\n
