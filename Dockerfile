@@ -1,0 +1,1 @@
+FROM eclipse-temurin:17-jre\nWORKDIR /app\nCOPY build/libs/*.jar app.jar\nEXPOSE 8080\nENTRYPOINT ["java","-jar","/app/app.jar"]\n
